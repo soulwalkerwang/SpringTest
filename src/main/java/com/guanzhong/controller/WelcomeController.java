@@ -27,27 +27,7 @@ public class WelcomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Map<String, Object> model) {
-
-        logger.debug("index() is executed!");
-
-        model.put("title", helloWorldService.getTitle(""));
-        model.put("msg", helloWorldService.getDesc());
-
         return "index";
     }
 
-    @RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
-    public ModelAndView hello(@PathVariable("name") String name) {
-
-        logger.debug("hello() is executed - $name {}", name);
-
-        ModelAndView model = new ModelAndView();
-        model.setViewName("index");
-
-        model.addObject("title", helloWorldService.getTitle(name));
-        model.addObject("msg", helloWorldService.getDesc());
-
-        return model;
-
-    }
 }

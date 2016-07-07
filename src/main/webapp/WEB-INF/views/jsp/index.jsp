@@ -3,8 +3,8 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" href="resources/css/foundation.css">
-    <link rel="stylesheet" href="resources/scss/app.css">
+    <link rel="stylesheet" href="/resources/css/foundation.css">
+    <link rel="stylesheet" href="/resources/scss/app.css">
 </head>
 <body>
 <form>
